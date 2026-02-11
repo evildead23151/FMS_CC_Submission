@@ -1,0 +1,6 @@
+{
+  "ela_weight": 0.4,
+  "noise_weight": 0.4,
+  "compression_weight": 0.2,
+  "global_sensitivity_threshold": 0.65
+}

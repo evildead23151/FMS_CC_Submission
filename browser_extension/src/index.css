@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.app-container {
+    width: 350px;
+    padding: 16px;
+    background: white;
+    min-height: 400px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.status-badge {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.scan-control {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 8px 16px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1976d2;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.result-container {
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.score-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.score-high {
+    background: #d32f2f;
+}
+
+/* High Risk */
+.score-medium {
+    background: #f57c00;
+}
+
+/* Caution */
+.score-low {
+    background: #388e3c;
+}
+
+/* Safe */
+
+.score-val {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.verdict-box h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.verdict-box p {
+    margin: 4px 0 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.signals-list {
+    background: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: left;
+}
+
+.signals-list h4 {
+    margin: 0 0 10px;
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.signal-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.signal-row:last-child {
+    border-bottom: none;
+}
+
+.sig-name {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.risk-high {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.risk-med {
+    color: #f57c00;
+    font-weight: bold;
+}
+
+.risk-low {
+    color: #388e3c;
+}
+
+.explanation-box {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: #555;
+    font-style: italic;
+    padding: 10px;
+    background: #fff8e1;
+    border-radius: 6px;
+    border-left: 3px solid #ffc107;
+}
+
+.error {
+    color: #d32f2f;
+    background: #ffebee;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}

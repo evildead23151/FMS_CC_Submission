@@ -1,0 +1,5 @@
+{
+  "alpha_decay_normal": 0.9,
+  "correction_reward": 0.3,
+  "min_confidence_samples": 5
+}
